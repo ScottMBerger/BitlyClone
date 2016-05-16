@@ -1,10 +1,12 @@
 <h1>Listing urls</h1>
 
+<p id="notice"><%= notice %></p>
 <table>
   <thead>
     <tr>
       <th>Name</th>
       <th>Short</th>
+      <th>Count</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,6 +16,7 @@
       <tr>
         <td><%= url.name %></td>
         <td><%= url.short %></td>
+        <td id="count"><%= url.count %></td>
         <td><%= link_to 'Show', 'urls/' + url.short %></td>
         <td><%= link_to 'Edit', edit_url_path(url) %></td>
         <td><%= link_to 'Destroy', url, method: :delete, data: { confirm: 'Are you sure?' } %></td>

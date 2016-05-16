@@ -12,6 +12,8 @@ class UrlsController < ApplicationController
   # GET /urls/1.json
   def show
     @url = Url.find_by short: params[:id]
+    @url.count += 1
+    Url.update(@url, :count => @url.count)
     redirect_to "//" + @url.name
   end
 
@@ -28,7 +30,9 @@ class UrlsController < ApplicationController
   # POST /urls.json
   def create
     insertion = url_params
+    puts insertion
     insertion[:short] = @short
+    insertion[:count] = 0
     @url = Url.new(insertion)
 
     respond_to do |format|
