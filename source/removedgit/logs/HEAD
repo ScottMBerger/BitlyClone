@@ -1,0 +1,3 @@
+0000000000000000000000000000000000000000 ee1cd1882f932ab7f5725d2b70966c78d9a162e8 Scott Berger <contact@scottberger.xyz> 1463200891 +0000	commit (initial): Add Capybara integration test
+ee1cd1882f932ab7f5725d2b70966c78d9a162e8 31c640bf0e03938a56330c3292a329a9d67d927e Scott Berger <contact@scottberger.xyz> 1463244443 +0000	commit: Release 1
+31c640bf0e03938a56330c3292a329a9d67d927e fc69256ba239fdcf1547bdd30cd0db54009302c5 Scott Berger <contact@scottberger.xyz> 1463431680 +0000	commit: Add RSpec tests
